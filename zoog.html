@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+ function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  
+  
+  background(144,73,0);
+ 
+
+  fill('black')  //body of the zoog
+  ellipse(200,200,100,100)
+  
+  fill('white')  //eyes of the zoog
+  ellipse(180,200,35,35)
+  ellipse(220,200,35,35)
+  
+  fill('black')  //pupil of the zoog
+  strokeWeight(5)
+  point(190,200,5,5)
+  point(210,200,5,5)
+  
+  fill('black') //spikes of the zoog
+  rect(200,120,5,30)
+  rect(200,250,5,30)
+  rect(120,200,30,5)
+  rect(250,200,30,5)
+  
+  textSize(39) //diagnol spikes that are made up of letters
+  text("/",230,165)
+  text("/",160,260)
+  textSize(50)
+  text("V",150,180)
+  text("X",210,260,)
+       
+  fill('black') //legs and arms of the zoog
+  textSize(100)
+  text("(",140,290)
+  text(")",240,290)
+  text("(",130,160)
+  text(")",230,160)
+  
+   stroke('black') // this creates a barrier around the whole zood that is black. you can clearly see it on the rock.
+  strokeWeight(3)
+  fill("grey") //rock that the zoog is holding
+  ellipse(200,60,100,100)
+ 
+  
+
+  
+}
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/paulinap/p5js/blob/master/zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
